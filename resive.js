@@ -1,6 +1,6 @@
 const amqplib = require("amqplib")
 
-const queueName = "Hello"
+const queueName = "Hello2"
 const msg = "Hello 4"
 
 
@@ -16,7 +16,7 @@ const sendMsg = async () => {
     console.log(`waiting message on Queue ${queueName}`)
     // Consume Message 
     channel.consume(queueName, msg =>{
-        console.log(` The message content is ${msg.content.toString()}`)
+        console.log(` The message content is : ${msg.content.toString()}`)
     },{noAck:true})
 
     

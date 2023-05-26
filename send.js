@@ -1,7 +1,7 @@
 const amqplib = require("amqplib")
 
-const queueName = "Hello"
-const msg = "Hello 8"
+const queueName = "Hello2"
+const msg = "Hello 9"
 
 
 const sendMsg = async () => {
@@ -15,7 +15,7 @@ const sendMsg = async () => {
     // Send Message 
     channel.sendToQueue(queueName, Buffer.from(msg))
 
-    console.log(`The meesage was send ${msg}`)
+    console.log(`The meesage was send :  ${msg}`)
 
     setTimeout(() => {
         connection.close()
