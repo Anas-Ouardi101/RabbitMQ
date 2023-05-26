@@ -4,7 +4,8 @@
   "description": "MicroService RabbitMQ",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "send": "nodemon send.js",
+    "resive" : "nodemon resive.js"
   },
   "keywords": [
     "RabbiMQ"
