@@ -4,8 +4,10 @@
   "description": "MicroService RabbitMQ",
   "main": "server.js",
   "scripts": {
-    "send": "nodemon send.js",
-    "resive" : "nodemon resive.js"
+    "send": "nodemon Hello_World/send.js",
+    "resive" : "nodemon Hello_World/resive.js",
+    "consumer_task":"nodemon Work_Queues/consumer_task.js",
+    "send_task":"nodemon Work_Queues/send_task.js"
   },
   "keywords": [
     "RabbiMQ"
